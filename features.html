@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Features — Fishki AI Scheduler</title>
+<meta name="description" content="What Fishki AI Scheduler actually does: caption generation, dual-platform queueing, and scheduled publishing via official APIs.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="index.html" class="logo">fishki<span>.</span>scheduler</a>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="features.html" class="active">Features</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" style="padding-bottom: 30px;">
+  <div class="wrap">
+    <div class="tag">features</div>
+    <h1>What it actually does</h1>
+    <p class="lead">Everything below runs against a small local queue file and two official publishing APIs — there is no dashboard to log into and no data sent anywhere beyond the platforms the video is being posted to.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>Caption &amp; hashtag generation</h2>
+    <p>Each video already has a short script attached to it (the narration used in the video itself). That script is passed to an AI model with instructions to write one short, platform-appropriate hook sentence, then paired with a small fixed set of relevant hashtags — never more than five, matching current short-form platform norms rather than the old spray-and-pray hashtag lists.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Dual-platform queue</h2>
+    <p>A single JSON queue file tracks every upcoming video: its id, the platform it targets, the generated caption, the scheduled date and time, and whether it has already been posted. TikTok and YouTube entries are scheduled on separate cadences so the same content doesn't land on both platforms on the exact same day.</p>
+    <ul class="plain">
+      <li>Automatic date assignment on a fixed weekly cadence</li>
+      <li>Per-platform status tracking (scheduled / posted)</li>
+      <li>Simple command-line commands to check what's next and mark items as posted</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Publishing via official APIs</h2>
+    <p>Uploads go through the TikTok Content Posting API and the YouTube Data API v3, authenticated with OAuth using credentials that belong to the same account that owns the channels. Nothing is posted to any account other than the one that authorized the app.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Scope of access</h2>
+    <p>The tool only requests permission to upload and manage videos on the authorizing account's own channels. It does not read messages, contacts, or any personal data unrelated to publishing the creator's own videos.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fmuted">Fishki AI Scheduler</div>
+    <div class="flinks">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -2,44 +2,89 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy — Fishki AI Scheduler</title>
-<style>body{font-family:sans-serif;max-width:700px;margin:40px auto;line-height:1.6;padding:0 20px;}</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1>Privacy Policy</h1>
-<p><strong>Last updated:</strong> July 2026</p>
 
-<p>Fishki AI Scheduler ("the app") is a personal, single-user tool used by its
-sole owner to schedule and publish short-form video content to one TikTok
-account (@fishki_ii). This policy explains what data the app accesses and how
-it is used.</p>
+<nav>
+  <div class="wrap">
+    <a href="index.html" class="logo">fishki<span>.</span>scheduler</a>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="features.html">Features</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="privacy.html" class="active">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+  </div>
+</nav>
 
-<h2>Data the app accesses</h2>
-<p>The app uses the TikTok Content Posting API to publish video content on
-behalf of the account owner. It accesses only:</p>
-<ul>
-<li>The OAuth access token and refresh token issued by TikTok to authorize
-publishing on the owner's own account.</li>
-<li>Basic creator info required by the API (available privacy levels,
-allowed video duration) needed to publish correctly.</li>
-</ul>
+<header class="hero" style="padding-bottom: 20px;">
+  <div class="wrap">
+    <h1 style="font-size: 2rem;">Privacy Policy</h1>
+    <p class="fmuted" style="margin-top: 10px;">Last updated: July 2026</p>
+  </div>
+</header>
 
-<h2>Data the app does not access</h2>
-<p>The app does not access, collect, or store any data belonging to other
-TikTok users. It does not read followers, comments, messages, or any content
-other than the videos the owner explicitly uploads through it.</p>
+<section>
+  <div class="wrap">
+    <h2>Overview</h2>
+    <p>Fishki AI Scheduler is a single-user automation tool. It is built and operated by one individual for their own TikTok and YouTube channels. It is not offered as a service to the public, and it does not collect or store data about anyone other than the person operating it.</p>
+  </div>
+</section>
 
-<h2>Data storage</h2>
-<p>Access tokens are stored locally on the owner's own device and are never
-transmitted to or stored on any third-party server. No user data is sold,
-shared, or used for advertising.</p>
+<section>
+  <div class="wrap">
+    <h2>What data is used</h2>
+    <p>The tool works with the following, all of which stay on the operator's own device and accounts:</p>
+    <ul class="plain">
+      <li>Video files created and edited by the operator, before publishing</li>
+      <li>OAuth access tokens issued by TikTok and Google, used only to publish to the operator's own channels</li>
+      <li>A local queue file recording which videos are scheduled and when</li>
+    </ul>
+    <p style="margin-top: 14px;">No data about any third party — viewers, followers, or anyone else — is collected, read, or stored by this tool.</p>
+  </div>
+</section>
 
-<h2>Third parties</h2>
-<p>The app does not share any data with third parties. It communicates only
-with TikTok's official API endpoints.</p>
+<section>
+  <div class="wrap">
+    <h2>How data is used</h2>
+    <p>Video scripts are sent to a third-party AI provider solely to generate a caption and hashtags for that video. Finished videos and their captions are sent to TikTok and YouTube exclusively through each platform's official API, for the sole purpose of publishing them to the operator's own account.</p>
+  </div>
+</section>
 
-<h2>Contact</h2>
-<p>For questions about this policy, contact the app owner via the TikTok
-account @fishki_ii.</p>
+<section>
+  <div class="wrap">
+    <h2>Data sharing</h2>
+    <p>Data is not sold, rented, or shared with any party beyond what is strictly necessary to generate captions and publish videos as described above. There is no advertising, analytics, or third-party tracking built into this tool.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Data retention &amp; deletion</h2>
+    <p>OAuth tokens and the local queue file are stored only on the operator's own device and can be deleted at any time by removing the corresponding local files. Revoking access from the TikTok or Google account settings immediately stops the tool from being able to publish.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Contact</h2>
+    <p>Questions about this policy can be sent to <a href="mailto:fishki.ii@proton.me" style="color: var(--accent);">fishki.ii@proton.me</a>.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fmuted">Fishki AI Scheduler</div>
+    <div class="flinks">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>

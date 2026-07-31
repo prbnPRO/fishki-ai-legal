@@ -1,20 +1,81 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Fishki AI Scheduler</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>body{font-family:sans-serif;max-width:700px;margin:40px auto;line-height:1.6;padding:0 20px;}</style>
+<title>Fishki AI Scheduler — automated video publishing tool</title>
+<meta name="description" content="Fishki AI Scheduler is a personal automation tool for scheduling and publishing short-form videos to TikTok and YouTube Shorts.">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1>Fishki AI Scheduler</h1>
-<p>Личный инструмент для планирования публикаций видео на YouTube-канале
-и TikTok-аккаунте @fishki_ii рубрики «Фишки ИИ». Приложение используется
-владельцем каналов для загрузки собственных видео и назначения даты их
-публикации через официальные API YouTube и TikTok.</p>
-<ul>
-<li><a href="./terms.html">Terms of Service</a></li>
-<li><a href="./privacy.html">Privacy Policy</a></li>
-</ul>
+
+<nav>
+  <div class="wrap">
+    <a href="index.html" class="logo">fishki<span>.</span>scheduler</a>
+    <div class="navlinks">
+      <a href="index.html" class="active">Home</a>
+      <a href="features.html">Features</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="tag">personal automation tool</div>
+    <h1>Schedule short-form videos without living inside two different apps.</h1>
+    <p class="lead">Fishki AI Scheduler is a lightweight publishing tool that takes a finished vertical video, writes a caption with an AI model, and queues it for TikTok and YouTube Shorts — on a schedule you set once.</p>
+    <a href="how-it-works.html" class="btn">See how it works →</a>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>Why it exists</h2>
+    <p>Publishing the same short video to more than one platform means opening two separate studios, re-typing the same caption twice, and remembering which day each post is supposed to go out. Fishki AI Scheduler removes that busywork: point it at a video file once, and it handles the caption, the hashtags, and the queue.</p>
+    <div class="grid">
+      <div class="card">
+        <span class="num">01</span>
+        <h3>One video, two platforms</h3>
+        <p>The same finished file is prepared for both TikTok and YouTube Shorts, with platform-appropriate captions instead of a copy-pasted one-size-fits-all description.</p>
+      </div>
+      <div class="card">
+        <span class="num">02</span>
+        <h3>Captions written for you</h3>
+        <p>A short caption and a small, relevant set of hashtags are generated from the video's own script, so nothing goes out blank or generic.</p>
+      </div>
+      <div class="card">
+        <span class="num">03</span>
+        <h3>A queue, not a to-do list</h3>
+        <p>Videos are scheduled ahead of time on a fixed cadence, so publishing stops being something you have to remember to do manually every few days.</p>
+      </div>
+      <div class="card">
+        <span class="num">04</span>
+        <h3>Built on official APIs</h3>
+        <p>Publishing happens through the official TikTok Content Posting API and the YouTube Data API — no browser automation, no screen-scraping.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Who this is for</h2>
+    <p>This is a single-user tool built for one creator's own channels — not a multi-tenant SaaS product and not something offered to the public. It exists to remove repetitive manual steps from a personal short-form video workflow.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fmuted">Fishki AI Scheduler</div>
+    <div class="flinks">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>

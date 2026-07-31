@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How it works — Fishki AI Scheduler</title>
+<meta name="description" content="The end-to-end workflow of Fishki AI Scheduler, from finished video file to a scheduled post on TikTok and YouTube Shorts.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="index.html" class="logo">fishki<span>.</span>scheduler</a>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="features.html">Features</a>
+      <a href="how-it-works.html" class="active">How it works</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" style="padding-bottom: 30px;">
+  <div class="wrap">
+    <div class="tag">how it works</div>
+    <h1>From finished video to scheduled post</h1>
+    <p class="lead">Five steps, run once per batch of videos. No step requires logging into TikTok or YouTube by hand.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <div>
+          <h3>Add a finished video to the queue</h3>
+          <p>A finished, edited vertical video file (with its accompanying short script) is placed in the local video folder that the tool watches.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <div>
+          <h3>Generate the caption</h3>
+          <p>The tool sends the video's script to an AI model and receives back a short caption sentence plus a small set of relevant hashtags.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <div>
+          <h3>Assign a publish date</h3>
+          <p>The video is slotted into the next open date on a fixed weekly cadence, separately for TikTok and for YouTube Shorts, and written into the local queue file (<span class="inline-code">publish-schedule.json</span>).</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <div>
+          <h3>Publish through the official API</h3>
+          <p>On the scheduled date, the video, caption, and hashtags are submitted through the TikTok Content Posting API or the YouTube Data API v3, using an OAuth token that was authorized once by the channel owner.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">05</div>
+        <div>
+          <h3>Mark it posted</h3>
+          <p>The queue entry is updated to reflect that the video has been published, so the next run of the tool knows what's left to do.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>What this tool does not do</h2>
+    <p>It does not generate video content, does not access any account other than the one that explicitly authorized it, and does not run continuously in the background — each step is triggered manually by the person operating it.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fmuted">Fishki AI Scheduler</div>
+    <div class="flinks">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
